@@ -2,3 +2,11 @@ SECTION {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+
+FIGURE.pull-left {
+	margin-right: 10px;
+}
+
+FIGURE.pull-right {
+	margin-left: 10px;
+}
