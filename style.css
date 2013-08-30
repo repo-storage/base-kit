@@ -6,3 +6,7 @@ SECTION {
 FIGURE.pull-left, FIGURE.pull-right {
 	margin: 10px;
 }
+
+ol.linenums li {
+	color: #2B2B2C;
+}
