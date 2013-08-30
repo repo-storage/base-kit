@@ -3,10 +3,6 @@ SECTION {
 	padding-bottom: 60px;
 }
 
-FIGURE.pull-left {
-	margin-right: 10px;
-}
-
-FIGURE.pull-right {
-	margin-left: 10px;
+FIGURE.pull-left, FIGURE.pull-right {
+	margin: 10px;
 }
