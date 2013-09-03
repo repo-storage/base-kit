@@ -573,6 +573,9 @@ MOBILE
 **/
 /* Large desktop 1600 */
 @media (min-width: 1600px) {
+  .container {
+    max-width: 1282px;
+  }
   .mast-head,
   HEADER H1 {
     font-size: 95px;
@@ -1204,4 +1207,8 @@ MOBILE
   margin: 20px 20px 80px;
   text-transform: uppercase;
   min-height: 80px;
+}
+.view-source {
+  padding: 20px;
+  display: block;
 }
