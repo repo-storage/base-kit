@@ -2,24 +2,35 @@
 
   .cover {
     //margin-top: @nav-height - 20;
-    padding-top: 60px;
+    padding-top: @section-padding + 40;
     //min-height: 460px;
-    padding-bottom: 60px;
-    background-color: darken(@background-color, 5%);
+    padding-bottom:  @section-padding + 40;
+    background-color: @cp-1;
     //#theme-gradient > .radial(20%, @nav-background-color);
-    border-bottom: @border-dotted;
+    border-bottom: none;
+    color: @cp-3;
+
   }
 
   .cover.fold {
-    min-height: 400px;
+   // min-height: 400px;
+    text-align: center;
 
   }
 
 
   #features {
-    padding-top: @nav-height - 20;
-    padding-bottom: @nav-height - 20;
-    border-bottom: @border-dotted;
+    padding-top: @section-padding;
+    padding-bottom: @section-padding;
+   // border-bottom: @border-dotted;
+    background-color: @cp-2;
+    color: @cp-5;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .roto-slab {
+    font-family: 'Roboto Slab', serif;
   }
 
 }

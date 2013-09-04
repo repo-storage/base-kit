@@ -1,8 +1,34 @@
-SECTION {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
 
 FIGURE.pull-left, FIGURE.pull-right {
 	margin: 10px;
+}
+ 
+#info .glyphicon {
+	/*color: #f6a83e;*/
+}
+
+#info article {
+	margin-bottom: 40px;
+	border-bottom: dotted #2e7525 1px;
+	padding-bottom: 40px;
+}
+
+#info {
+	padding-bottom: 40px;
+	/*padding-bottom: 120px;*/
+}
+
+
+
+	#info .titles, #info .titles H1 {
+		color: #2e725f;
+	}
+
+#content {
+	/*background-color: #be6b1d;
+	color: #FCE0BA;;*/
+
+}
+BODY {
+	background-color: #FFF6E2;
 }

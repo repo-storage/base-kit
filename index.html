@@ -7,39 +7,127 @@
         {{ bootstrap_css_min }}
         {{ theme_stylesheet }}
         <link rel="stylesheet" href="{{ theme_url }}/style.css" type="text/css" />
-          <link rel="stylesheet" href="{{ theme_url }}/fonts/open-sans/stylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="{{ theme_url }}/fonts/open-sans/stylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="{{ theme_url }}/fonts/robotoslab_regular/stylesheet.css" type="text/css" />
+        <!--<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>-->
 
     </head>
     <body>
-
         <header>
-            <nav id="top-nav" class="navbar navbar-fixed-top">
-                <div class="container">
-                    <ul class="nav navbar-nav pull-right">
-                        {% for page in pages if page.date is empty %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                    <a href="{{ base_url }}" class="navbar-brand sub-headlines">
-                        {{ config.site_title }}
-                    </a>
-                    <!-- container -->
+            {% include tpl.cover ignore missing %}
+        </header>
+        <section id="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
+
+
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> PICO Ver 0.7</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Prepacked Pico Plugins</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Custom Meta Values</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Page Layout(s)</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Dynamic Page Galleries</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Custom HTML Templates</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Built With Bootstrap </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Style Guide Boilerplate</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                        <article>
+                            <h1 class="titles"><span class="glyphicon glyphicon-ok-circle"></span> Starter Theme</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quas libero magnam accusantium. Impedit, voluptates cupiditate sapiente tenetur harum obcaecati eius in quod iste neque odio temporibus nisi ipsam.<span class="readmore"><a href="#">Full Post</a></span></p>
+                        </article>
+                    </div>
                 </div>
 
-            </nav>
+            </div>
 
-            {% include tpl.cover ignore missing %}
 
-        </header>
+        </section>
+
+
+        <section id="screenshots">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Themes</h1>
+                        <ul class="grids-3 grid">
+                            <li class="folio">
+                                <div class="items">
+                                    <figure>
+                                        <img src="http://placehold.it/400x260&text=Preview" alt=""/>
+                                    </figure>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum, nostrum
+                                        obcaecati provident quia unde!</p>
+                                </div>
+                            </li>
+
+                            <li class="folio">
+                                <div class="items">
+                                    <figure>
+                                        <img src="http://placehold.it/400x260&text=Preview" alt=""/>
+                                    </figure>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum, nostrum
+                                        obcaecati provident quia unde!</p>
+                                </div>
+                            </li>
+
+                            <li class="folio">
+                                <div class="items">
+                                    <figure>
+                                        <img src="http://placehold.it/400x260&text=Preview" alt=""/>
+                                    </figure>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum, nostrum
+                                        obcaecati provident quia unde!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="content">
-            {% include tpl.content ignore missing %}
+            <div class="container">
+                {% include tpl.content ignore missing %}
+            </div>
+
         </section>
-        <footer class="primary-color-4">
+
+
+        <footer class="primary-color-5">
             {% include tpl.footer ignore missing %}
 
+            <p>
+                <img src="{{ theme_url }}/images/mp-logo-sm.png" alt="logo">
+            </p>
 
-         {{ theme.organization }} {{ theme.copyright }}
+
+            {{ theme.organization }} {{ theme.copyright }}
 
             <!-- ******end - row****** -->
 

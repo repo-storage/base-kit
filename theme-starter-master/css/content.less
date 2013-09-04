@@ -1,9 +1,9 @@
 .content(){
 
   #content {
-    padding-top: @nav-height;
-    padding-bottom: @nav-height;
-    margin: 0px 0px @margins;
+    //padding-top: @section-padding;
+    padding-bottom: @section-padding;
+   // margin: 0px 0px @margins;
   }
 
   #content P {
@@ -16,7 +16,7 @@
   }
 
   .cover-image {
-    @margins: @section-padding - 20;
+    @margins: @section-padding + 20;
        margin-bottom: @margins;
        margin-top: @margins;
   }
@@ -29,7 +29,7 @@
     }
   }
 
-  .post .readmore {
+  .post .readmore, .readmore {
 
     display: block;
     padding: @padding;
@@ -83,13 +83,12 @@
   }
 
   footer {
-
-    color: @cp-3;
     text-align: center;
-    margin-bottom: 60px;
-    background-color: @nav-background-color;
+   // margin-bottom: 60px;
+    background-color: @cp-2;
     min-height: 100px;
-    padding: @nav-height;
+    padding-top: @section-padding;
+    padding-bottom: @section-padding;
 
     > div {
       text-align: left;
